@@ -6,7 +6,7 @@ browser = webdriver.Chrome("/Users\Downloads\chromedriver_win32\chromedriver.exe
 
 browser.get("https://www.amazon.co.uk/gp/product/B08H95Y452?pf_rd_r=PVZGNSC06XF89ZD2ZCWN&pf_rd_p=6e878984-68d5-4fd2-b7b3-7bc79d9c8b60&pd_rd_r=a57fa674-b176-4535-ac0f-4c09a45728fd&pd_rd_w=DwFGX&pd_rd_wg=w6pZu&ref_=pd_gw_unk") #Url for product
 
-buybutton = False # if buy button is not detected then webpage will refresh
+buybutton = False # if the buy now button is not detected then webpage will refresh
 while not buybutton:
     try:
         addToCartbtn = addbutton = browser.find_element_by_id("outOfStockBuyBox_feature_div")
