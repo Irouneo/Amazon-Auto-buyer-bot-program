@@ -23,10 +23,10 @@ while not buybutton:
         print("button was clicked")
         buybutton = True
         email = browser.find_element_by_id("ap_email")
-        email.send_keys("enter email")
+        email.send_keys("enter email") #enter email
         browser.find_element_by_id("continue").click()
         password = browser.find_element_by_id("ap_password")
-        pword = "enter password"
+        pword = "enter password" #enter password
         password.send_keys(pword)
         browser.find_element_by_id("signInSubmit").click()
         browser.find_element_by_id("submitOrderButtonId").click()
